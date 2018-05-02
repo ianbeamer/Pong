@@ -47,6 +47,7 @@ public class Ball {
         //if on bottom, reset to original position,
         if(rect.bottom >= ScreenY) {
             rect = new RectF(ScreenX/2,0, ScreenX/2 + 100, 50);
+            YVelocity = ScreenY / 10;
             XVelocity = YVelocity + setRandomXVelocity();
             Score.Score = 0;
         }

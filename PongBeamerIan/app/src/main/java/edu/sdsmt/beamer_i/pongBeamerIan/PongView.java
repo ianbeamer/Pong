@@ -25,22 +25,6 @@ class PongView extends View {
     Bat Bat;
     Ball Ball;
 
-
-    public PongView(Context context, int x, int y){
-        super(context);
-
-        ScreenX = x;
-        ScreenY = y;
-
-       // Holder = getHolder();
-        Paint = new Paint();
-
-        Bat = new Bat(ScreenX, ScreenY);
-        Ball = new Ball(ScreenX, ScreenY);
-
-        setupAndRestart();
-    }
-
     public PongView(Context context) {
         super(context);
         setupAndRestart();
