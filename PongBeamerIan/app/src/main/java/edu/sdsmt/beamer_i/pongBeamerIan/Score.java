@@ -1,4 +1,4 @@
-package edu.sdsmt.beamer_i.pongtest;
+package edu.sdsmt.beamer_i.pongBeamerIan;
 
 public class Score {
     public static int Score = 0;

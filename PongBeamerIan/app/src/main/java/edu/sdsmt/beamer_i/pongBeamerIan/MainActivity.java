@@ -1,9 +1,9 @@
-package edu.sdsmt.beamer_i.pongtest;
+package edu.sdsmt.beamer_i.pongBeamerIan;
 
-import android.graphics.Point;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.view.Display;
+
+import edu.sdsmt.beamer_i.pongtest.R;
 
 public class MainActivity extends AppCompatActivity {
     PongView pongView;
@@ -11,24 +11,16 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        Display display = getWindowManager().getDefaultDisplay();
-
-        Point size = new Point();
-        display.getSize(size);
-
-        pongView = new PongView(this, size.x, size.y);
-        setContentView(pongView);
+        setContentView(R.layout.activity_main);
     }
 
     @Override
     protected void onResume(){
         super.onResume();
-
     }
 
     @Override
     protected void onPause(){
         super.onPause();
-
     }
 }

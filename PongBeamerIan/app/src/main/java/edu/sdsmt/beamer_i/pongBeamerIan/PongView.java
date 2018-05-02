@@ -1,10 +1,13 @@
-package edu.sdsmt.beamer_i.pongtest;
+package edu.sdsmt.beamer_i.pongBeamerIan;
 
 import android.content.Context;
+import android.content.res.Resources;
 import android.graphics.Canvas;
 import android.graphics.Color;
 import android.graphics.Paint;
 import android.graphics.RectF;
+import android.support.annotation.Nullable;
+import android.util.AttributeSet;
 import android.view.MotionEvent;
 import android.view.SurfaceHolder;
 import android.view.View;
@@ -38,7 +41,30 @@ class PongView extends View {
         setupAndRestart();
     }
 
+    public PongView(Context context) {
+        super(context);
+        setupAndRestart();
+    }
+
+    public PongView(Context context, @Nullable AttributeSet attrs) {
+        super(context, attrs);
+        setupAndRestart();
+    }
+
+    public PongView(Context context, @Nullable AttributeSet attrs, int defStyleAttr) {
+        super(context, attrs, defStyleAttr);
+        setupAndRestart();
+    }
+
     public void setupAndRestart(){
+        ScreenX = Resources.getSystem().getDisplayMetrics().widthPixels;
+        ScreenY = Resources.getSystem().getDisplayMetrics().heightPixels;
+
+        // Holder = getHolder();
+        Paint = new Paint();
+
+        Bat = new Bat(ScreenX, ScreenY);
+        Ball = new Ball(ScreenX, ScreenY);
         Ball.reset(ScreenX, ScreenY);
     }
 

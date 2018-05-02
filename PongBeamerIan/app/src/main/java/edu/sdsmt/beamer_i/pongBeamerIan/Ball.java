@@ -1,4 +1,4 @@
-package edu.sdsmt.beamer_i.pongtest;
+package edu.sdsmt.beamer_i.pongBeamerIan;
 
 import android.graphics.RectF;
 
@@ -79,11 +79,11 @@ public class Ball {
 
     public int setRandomXVelocity(){
         Random gen = new Random();
-        int ans = gen.nextInt(251);
+        int ans = gen.nextInt(51);
 
-        gen = new Random();
-        int neg = gen.nextInt(2);
-        if(neg == 0)
+        Random tst = new Random();
+        int neg = tst.nextInt(2);
+        if(neg == 1)
             ans = -ans;
 
         return ans;

@@ -1,4 +1,4 @@
-package edu.sdsmt.beamer_i.pongtest;
+package edu.sdsmt.beamer_i.pongBeamerIan;
 
 import android.content.Context;
 import android.support.test.InstrumentationRegistry;
