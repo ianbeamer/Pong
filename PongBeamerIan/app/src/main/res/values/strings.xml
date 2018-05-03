@@ -4,4 +4,7 @@
     <string name="reset">RESET</string>
     <string name="pause">PAUSE</string>
     <string name="help">HELP</string>
+    <string name="i_pick_colors">I Pick Colors</string>
+    <string name="figure_it_out_it_s_not_hard">Figure it out, it\'s not hard.</string>
+    <string name="start">START</string>
 </resources>

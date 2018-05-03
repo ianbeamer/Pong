@@ -16,6 +16,8 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name="edu.sdsmt.beamer_i.pongBeamerIan.ColorPicker" />
+        <activity android:name="edu.sdsmt.beamer_i.pongBeamerIan.Tutorial" />
     </application>
 
 </manifest>
