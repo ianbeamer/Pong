@@ -1,3 +1,10 @@
+/*
+Tutorial
+Ian Beamer
+
+Creates a very thorough tutorial
+ */
+
 package edu.sdsmt.beamer_i.pongBeamerIan;
 
 import android.os.Bundle;

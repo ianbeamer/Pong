@@ -1,3 +1,10 @@
+/*
+Score
+Ian Beamer
+
+A simple global class to hold the score
+ */
+
 package edu.sdsmt.beamer_i.pongBeamerIan;
 
 public class Score {

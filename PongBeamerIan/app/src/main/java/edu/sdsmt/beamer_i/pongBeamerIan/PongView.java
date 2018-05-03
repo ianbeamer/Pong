@@ -1,3 +1,10 @@
+/*
+PongView
+Ian Beamer
+
+Contains the entire pong logic for the frame-by-frame activity
+ */
+
 package edu.sdsmt.beamer_i.pongBeamerIan;
 
 import android.content.Context;
@@ -9,17 +16,11 @@ import android.graphics.RectF;
 import android.support.annotation.Nullable;
 import android.util.AttributeSet;
 import android.view.MotionEvent;
-import android.view.SurfaceHolder;
 import android.view.View;
 
 class PongView extends View {
-    Thread GameThread = null;
-    SurfaceHolder Holder;
-    volatile boolean Playing;
     boolean Pause = true;
-    Canvas Canvas;
     Paint Paint;
-    long Frame;
     int ScreenX;
     int ScreenY;
     Bat Bat;
@@ -27,20 +28,24 @@ class PongView extends View {
 
     public PongView(Context context) {
         super(context);
+        Score.Score = 0;
         setupAndRestart();
     }
 
     public PongView(Context context, @Nullable AttributeSet attrs) {
         super(context, attrs);
+        Score.Score = 0;
         setupAndRestart();
     }
 
     public PongView(Context context, @Nullable AttributeSet attrs, int defStyleAttr) {
         super(context, attrs, defStyleAttr);
+        Score.Score = 0;
         setupAndRestart();
     }
 
     public void setupAndRestart(){
+        Score.Score = 0;
         ScreenX = Resources.getSystem().getDisplayMetrics().widthPixels;
         ScreenY = Resources.getSystem().getDisplayMetrics().heightPixels;
 

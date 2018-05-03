@@ -1,3 +1,12 @@
+/*
+ColorPicker
+Ian Beamer
+
+A color picker for the user to use
+
+DOES NOT DO ANYTHING
+ */
+
 package edu.sdsmt.beamer_i.pongBeamerIan;
 
 import android.os.Bundle;

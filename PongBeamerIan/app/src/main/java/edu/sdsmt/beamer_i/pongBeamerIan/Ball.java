@@ -1,3 +1,10 @@
+/*
+Tutorial
+Ian Beamer
+
+contains the logic and creation of the ball in the game
+ */
+
 package edu.sdsmt.beamer_i.pongBeamerIan;
 
 import android.graphics.RectF;

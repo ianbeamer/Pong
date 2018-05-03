@@ -1,3 +1,10 @@
+/*
+Bat
+Ian Beamer
+
+Holds the logic and creation of the bat in the game
+ */
+
 package edu.sdsmt.beamer_i.pongBeamerIan;
 
 import android.graphics.RectF;
